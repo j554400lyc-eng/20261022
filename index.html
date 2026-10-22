@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="李永欽老師個人介紹｜新竹縣山崎國小事務組長、科學教育與學生創新學習。">
+<meta name="theme-color" content="#245b4b">
+<title>李永欽老師｜教育行政・科學探究・創新實踐</title>
+<style>
+:root{
+  --green:#245b4b;--green-deep:#173f35;--green-soft:#eaf2ed;
+  --gold:#c28b3c;--gold-soft:#f8f0e1;--ink:#202c28;--muted:#5d6c65;
+  --paper:#fff;--bg:#f6f7f3;--line:#dce4dd;--max:1160px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans TC","Microsoft JhengHei",system-ui,sans-serif;line-height:1.8;font-size:17px}
+a{color:var(--green);text-underline-offset:3px}
+a:hover{color:#102f27}
+a:focus-visible,button:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.skip{position:absolute;left:-9999px;top:auto}.skip:focus{left:12px;top:12px;background:white;padding:12px;z-index:100}
+.wrap{width:min(var(--max),calc(100% - 40px));margin:auto}
+.topbar{background:var(--green-deep);color:#fff;font-size:14px}
+.topbar .wrap{display:flex;justify-content:space-between;gap:12px;padding:8px 0;flex-wrap:wrap}
+header{background:var(--paper);border-bottom:1px solid var(--line)}
+.navrow{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:14px 0}
+.brand{font-weight:800;letter-spacing:.04em;color:var(--green-deep);text-decoration:none}
+nav{display:flex;gap:5px;flex-wrap:wrap}
+nav a{padding:9px 12px;border-radius:5px;text-decoration:none;color:var(--ink);font-size:15px}
+nav a:hover{background:var(--green-soft)}
+.hero{background:linear-gradient(100deg,#edf3ed 0%,#f8f7f1 70%,#f5ebd9 100%);border-bottom:1px solid var(--line)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(260px,.7fr);gap:50px;align-items:center;padding:68px 0 62px}
+.eyebrow{font-size:14px;font-weight:800;letter-spacing:.14em;color:var(--green);text-transform:uppercase}
+h1{font-size:clamp(2.3rem,5vw,4.4rem);line-height:1.18;letter-spacing:.02em;margin:14px 0}
+.hero p{max-width:720px;color:#3f5048;font-size:clamp(17px,2vw,20px)}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:10px 18px;border:1px solid var(--green);border-radius:4px;background:var(--green);color:white;text-decoration:none;font-weight:700}
+.btn:hover{background:var(--green-deep);color:white}
+.btn.secondary{background:transparent;color:var(--green)}
+.btn.secondary:hover{background:white}
+.profile-panel{background:rgba(255,255,255,.76);border-left:4px solid var(--gold);padding:24px 26px}
+.profile-panel .label{font-size:13px;color:var(--muted);letter-spacing:.08em}
+.profile-panel strong{display:block;font-size:21px;color:var(--green-deep);margin:2px 0 12px}
+.profile-panel p{font-size:15px;margin:0;color:var(--muted)}
+.section{padding:66px 0}
+.section.white{background:#fff}
+.section-head{display:grid;grid-template-columns:190px 1fr;gap:28px;align-items:start;margin-bottom:30px}
+.kicker{color:var(--gold);font-size:13px;letter-spacing:.16em;font-weight:800}
+h2{font-size:clamp(1.8rem,3vw,2.5rem);line-height:1.3;color:var(--green-deep);margin:5px 0 10px}
+h3{font-size:1.25rem;line-height:1.45;margin:0 0 10px;color:var(--green-deep)}
+.section-head p{margin:8px 0;color:var(--muted);max-width:760px}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:34px}
+.prose p{margin-top:0}
+.pullquote{margin:20px 0;padding:16px 22px;border-left:3px solid var(--gold);background:var(--gold-soft);font-size:20px;color:var(--green-deep);font-weight:700}
+.pill-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}
+.pill{display:inline-block;padding:5px 10px;background:var(--green-soft);color:var(--green-deep);font-size:14px;border-radius:3px}
+.timeline{border-left:2px solid var(--line);margin-left:8px;padding-left:26px}
+.timeline-item{position:relative;padding:0 0 28px}
+.timeline-item:before{content:"";position:absolute;left:-34px;top:8px;width:12px;height:12px;background:var(--gold);border:3px solid var(--bg);border-radius:50%}
+.timeline-item .meta{font-size:14px;color:var(--muted);font-weight:700;margin-bottom:4px}
+.timeline-item p{margin:6px 0;color:#46564e}
+.feature{display:grid;grid-template-columns:110px 1fr;gap:20px;padding:25px 0;border-top:1px solid var(--line)}
+.feature:first-child{border-top:0}
+.feature-no{font-size:34px;font-weight:800;color:#b9cbbd;line-height:1}
+.feature p{margin:0;color:var(--muted)}
+.award-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.award{background:#fff;border:1px solid var(--line);padding:24px;min-height:190px}
+.award .tag{font-size:13px;color:#76501d;font-weight:800;letter-spacing:.08em}
+.award h3{margin-top:10px}
+.award p{margin:8px 0;color:var(--muted);font-size:16px}
+.notice{border:1px solid #e8d7b7;background:#fffaf0;padding:16px 18px;color:#5f4c2d;font-size:14px;margin-top:22px}
+.work-list{display:grid;grid-template-columns:1fr 1fr;gap:0 32px}
+.work-item{padding:18px 0;border-bottom:1px solid var(--line)}
+.work-item h3{font-size:18px}
+.work-item p{margin:5px 0 0;color:var(--muted)}
+.callout{background:var(--green-deep);color:#fff;padding:34px;display:grid;grid-template-columns:1fr auto;gap:25px;align-items:center}
+.callout h2{color:white;margin-top:0}.callout p{margin-bottom:0;color:#e0eae3}
+.source-list{padding-left:22px}.source-list li{margin:10px 0;color:var(--muted)}
+footer{background:#122f27;color:#e4eee7;padding:28px 0;font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+footer p{margin:0}
+.backtop{position:fixed;right:16px;bottom:16px;background:var(--green-deep);color:#fff;padding:10px 13px;text-decoration:none;border-radius:3px;font-size:14px}
+@media(max-width:800px){
+ .wrap{width:min(100% - 30px,var(--max))}
+ .navrow{align-items:flex-start;flex-direction:column;gap:8px}
+ nav{width:100%;gap:2px}
+ nav a{padding:8px 9px;font-size:14px}
+ .hero-grid{grid-template-columns:1fr;gap:28px;padding:45px 0}
+ .profile-panel{max-width:560px}
+ .section{padding:48px 0}
+ .section-head{grid-template-columns:1fr;gap:5px}
+ .two-col,.award-grid,.work-list{grid-template-columns:1fr}
+ .feature{grid-template-columns:65px 1fr;gap:14px}
+ .callout{grid-template-columns:1fr;padding:25px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+@media print{
+ .topbar,nav,.hero-actions,.backtop{display:none!important}
+ body{background:white;font-size:12pt}.hero,.section,.section.white{background:white}
+ .section{padding:24px 0}.wrap{width:100%}.award{break-inside:avoid}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">跳至主要內容</a>
+<div class="topbar"><div class="wrap"><span>教育行政・科學探究・創新實踐</span><span>新竹縣山崎國民小學</span></div></div>
+<header>
+  <div class="wrap navrow">
+    <a class="brand" href="#top">李永欽老師｜個人專業網站</a>
+    <nav aria-label="主要導覽">
+      <a href="#about">關於我</a><a href="#science">科學教育</a><a href="#awards">競賽成果</a><a href="#admin">行政工作</a><a href="#belief">教育理念</a><a href="#references">公開資料</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<section class="hero" id="top">
+ <div class="wrap hero-grid">
+  <div>
+   <div class="eyebrow">EDUCATION · SCIENCE · SERVICE</div>
+   <h1>李永欽老師</h1>
+   <p><strong>新竹縣山崎國小事務組長</strong><br>以務實的行政支持校園運作，以好奇心陪伴學生探索問題，讓學習從觀察出發、以實驗驗證，並將成果帶向更寬廣的舞台。</p>
+   <div class="hero-actions"><a class="btn" href="#science">認識科學教育經歷</a><a class="btn secondary" href="#admin">了解行政服務</a></div>
+  </div>
+  <aside class="profile-panel" aria-label="個人專業摘要">
+   <div class="label">專業關注</div><strong>行政服務 × 科學探究</strong>
+   <p>校園事務與環境維護、學生研究歷程、科學展覽指導、創新思考及跨地域交流。</p>
+   <div class="pill-row"><span class="pill">教育行政</span><span class="pill">科展指導</span><span class="pill">探究實作</span><span class="pill">創新教育</span></div>
+  </aside>
+ </div>
+</section>
+
+<section class="section white" id="about">
+ <div class="wrap">
+  <div class="section-head"><div><div class="kicker">01 / ABOUT</div><h2>關於我</h2></div><p>在學校現場，行政工作與教學並非兩條平行線。穩定、安全、整潔的校園環境，是孩子安心學習的基礎；鼓勵提問、動手實驗與反覆修正，則能讓孩子把課本知識轉化為真正的能力。</p></div>
+  <div class="two-col">
+   <div class="prose">
+    <h3>從校園日常，支持每一份學習</h3>
+    <p>目前服務於新竹縣山崎國小，擔任事務組長。事務工作需要細心、溝通、規劃與執行，也需要站在師生使用校園的角度，思考環境、設備與日常運作如何更安全、更有效率。</p>
+    <p>個人公開教育紀錄亦呈現出對科學探究與學生研究的長期投入。透過觀察生活現象、形成問題、設計實驗、記錄結果及分享發現，學生能在真實情境中練習思考與解決問題。</p>
+   </div>
+   <div>
+    <div class="pullquote">「給學生機會，教與學就有最大的成長與回饋。」</div>
+    <p>這句話出自公開發表的科展教學經驗文章，亦可作為理解科學教育的起點：教師不是替學生找到所有答案，而是創造機會，陪伴學生學會尋找答案。</p>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="section" id="science">
+ <div class="wrap">
+  <div class="section-head"><div><div class="kicker">02 / SCIENCE</div><h2>科學教育與探究實作</h2></div><p>科展的價值不只在名次，更在研究歷程中培養觀察、提問、蒐集資料、控制變因、分析證據、表達與合作等能力。</p></div>
+  <div class="feature"><div class="feature-no">01</div><div><h3>從生活現象發現研究問題</h3><p>鼓勵學生從身邊看得到、摸得到的現象出發，將「覺得有趣」轉化成能觀察、能比較、能驗證的問題。</p></div></div>
+  <div class="feature"><div class="feature-no">02</div><div><h3>以實驗與紀錄累積證據</h3><p>透過規劃步驟、調整條件、重複測試與完整紀錄，讓結論建立在證據上，而不只是直覺或猜想。</p></div></div>
+  <div class="feature"><div class="feature-no">03</div><div><h3>讓研究成果能被理解與分享</h3><p>研究者需要清楚說明研究動機、方法、結果與限制。展覽與競賽提供學生練習表達、接受提問與修正想法的機會。</p></div></div>
+  <div class="feature"><div class="feature-no">04</div><div><h3>重視歷程，也重視孩子的成長</h3><p>研究途中會有不如預期的結果、反覆嘗試與重新設計。這些經驗能培養耐心、合作、韌性與負責任的態度。</p></div></div>
+ </div>
+</section>
+
+<section class="section white" id="awards">
+ <div class="wrap">
+  <div class="section-head"><div><div class="kicker">03 / HIGHLIGHTS</div><h2>科展與科技創新競賽</h2></div><p>以下整理可由公開資料查證、且與「李永欽」姓名相符的科學教育紀錄。不同年度、主辦單位及獎項層級各有差異，網頁以公開來源所載內容為準。</p></div>
+  <div class="award-grid">
+   <article class="award"><div class="tag">全國中小學科學展覽會</div><h3>全國科展指導與參展經驗</h3><p>公開文章記載曾指導學生參加第45、48、49、55、56屆中小學科學展覽會，並記錄第45屆最佳（鄉土）教材獎、第49屆第三名等成果。</p><p><a href="https://twsf.ntsec.gov.tw/FileAtt.ashx?fcode=4F08E32A347696BB2D72DD9D232AE7AA&lang=1" target="_blank" rel="noopener noreferrer">閱讀科展教學經驗文章 ↗</a></p></article>
+   <article class="award"><div class="tag">教師專業肯定</div><h3>全國科展優良教師表揚紀錄</h3><p>國立臺灣科學教育館公開的第57屆優良指導教師表揚名單，列有李永欽，當時服務學校為金門縣金湖國民小學，參展屆數記載為5屆。</p><p><a href="https://twsf.ntsec.gov.tw/FileAtt.ashx?fcode=F78AA5E2F6B72E2D118DDD5153F9E61B&lang=1" target="_blank" rel="noopener noreferrer">查閱公開表揚名單 ↗</a></p></article>
+   <article class="award"><div class="tag">福建省青少年科技創新大賽</div><h3>大會一等獎</h3><p>科展教學經驗文章提及，第32屆福建省青少年科技創新大賽榮獲大會一等獎，呈現學生研究成果參與跨地域科技交流的經驗。</p><p><a href="https://twsf.ntsec.gov.tw/FileAtt.ashx?fcode=4F08E32A347696BB2D72DD9D232AE7AA&lang=1" target="_blank" rel="noopener noreferrer">查看文章中的競賽紀錄 ↗</a></p></article>
+   <article class="award"><div class="tag">全國青少年科技創新大賽</div><h3>「小簾立大功」隔音與吸音研究</h3><p>公開報導記載，金湖國小學生以「小簾立大功－窗簾的隔音與吸音效果之研究」參賽，曾獲臺灣第58屆中小學科展物理科國小組全國第3名，後續在第34屆全國青少年科技創新大賽獲一等獎金牌及企業贊助專項獎；報導列李永欽、李怡芯為指導老師。</p><p><a href="https://www.kinmen.gov.tw/News_Content2.aspx?n=98E3CA7358C89100&s=51D57273EC4C4F92&sms=BF7D6D478B935644" target="_blank" rel="noopener noreferrer">閱讀金門縣政府報導 ↗</a></p></article>
+  </div>
+  <div class="notice"><strong>資料核對提醒：</strong>以上公開紀錄中，部分資料的任職學校為金湖國小，屬過往公開經歷；目前頁首職稱「新竹縣山崎國小事務組長」依您本次提供的資訊呈現。若您希望網站只呈現特定任職階段，或需補入更多全國科展／科技創新大賽作品與獎項，可再依正式證明及作品資料更新。</div>
+ </div>
+</section>
+
+<section class="section" id="admin">
+ <div class="wrap">
+  <div class="section-head"><div><div class="kicker">04 / SCHOOL SERVICE</div><h2>事務行政與校園支持</h2></div><p>事務行政是校園日常順利運作的重要支柱。除了依規定辦理各項業務，更需要主動掌握現場需求，做好協調、追蹤與安全管理。</p></div>
+  <div class="work-list">
+   <article class="work-item"><h3>校園環境與設施維護</h3><p>關注校園空間、設施設備與使用需求，協助營造安全、整潔、便利的學習環境。</p></article>
+   <article class="work-item"><h3>採購與財物管理</h3><p>依相關規定辦理採購、財產與物品管理，重視程序、紀錄、效率與資源妥善運用。</p></article>
+   <article class="work-item"><h3>修繕協調與工程追蹤</h3><p>彙整師生需求、聯繫相關人員、掌握辦理進度，並留意施工期間的安全與動線。</p></article>
+   <article class="work-item"><h3>校園安全與風險預防</h3><p>從日常巡視、設備狀況與通報處理著手，及早發現問題並協助改善。</p></article>
+   <article class="work-item"><h3>跨處室溝通合作</h3><p>與校長、各處室同仁、教師及外部廠商保持清楚溝通，讓工作流程更順暢。</p></article>
+   <article class="work-item"><h3>行政紀錄與持續改善</h3><p>重視文件、進度與成果紀錄，從執行經驗中檢視流程，逐步提升行政品質。</p></article>
+  </div>
+  <p class="notice">本區為事務組長職務的專業面向介紹，並非逐項宣稱個人已完成的特定工程或採購案件；實際工作內容可依學校分工與本人經歷進一步補充。</p>
+ </div>
+</section>
+
+<section class="section white" id="belief">
+ <div class="wrap">
+  <div class="section-head"><div><div class="kicker">05 / BELIEF</div><h2>我的教育理念</h2></div><p>教育需要理想，也需要每天踏實完成的小事。把基本工作做好，讓孩子有安全的環境、充分的探索機會與被認真傾聽的感受，就是教育現場的重要力量。</p></div>
+  <div class="two-col">
+   <div><h3>把事情做好，是對師生的支持</h3><p>行政工作的價值常在細節裡。預先規劃、依規定執行、主動溝通、及時處理，讓教師能安心教學，讓學生能安心學習。</p></div>
+   <div><h3>讓孩子從提問走向發現</h3><p>不急著給標準答案，而是引導孩子提出問題、尋找資料、動手驗證、說明證據。即使結果與預期不同，也能從中學會重新思考。</p></div>
+   <div><h3>合作讓成果走得更遠</h3><p>科展與校務都仰賴團隊合作。尊重不同專長、明確分工、互相支持，才能將個人的努力轉化為共同的成果。</p></div>
+   <div><h3>持續學習，持續改善</h3><p>教育環境與需求不斷改變。願意聆聽、檢視做法、接受建議並持續精進，是專業工作者應有的態度。</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="section">
+ <div class="wrap">
+  <div class="callout">
+   <div><h2>讓行政成為支持，讓探究成為習慣</h2><p>期盼在校園裡，每一項細緻的行政工作都能支持學習，每一次真誠的提問都能帶來新的發現。</p></div>
+   <a class="btn secondary" href="#references" style="border-color:#d8e6dc;color:#fff">查看公開資料</a>
+  </div>
+ </div>
+</section>
+
+<section class="section white" id="references">
+ <div class="wrap">
+  <div class="section-head"><div><div class="kicker">06 / REFERENCES</div><h2>公開資料與延伸閱讀</h2></div><p>為方便訪客查證，列出本頁用來整理科展及科技創新競賽經歷的公開來源。網頁內容可依最新任職資料、正式獎狀與作品紀錄持續修訂。</p></div>
+  <ol class="source-list">
+   <li><a href="https://twsf.ntsec.gov.tw/FileAtt.ashx?fcode=4F08E32A347696BB2D72DD9D232AE7AA&lang=1" target="_blank" rel="noopener noreferrer">國立臺灣科學教育館：〈淺談學生與我的科展成長經驗〉</a>——記載科展指導屆別、部分得獎紀錄及福建省青少年科技創新大賽經驗。</li>
+   <li><a href="https://twsf.ntsec.gov.tw/FileAtt.ashx?fcode=F78AA5E2F6B72E2D118DDD5153F9E61B&lang=1" target="_blank" rel="noopener noreferrer">國立臺灣科學教育館：第57屆中小學科學展覽會優良指導教師表揚名單</a>——公開名單列有李永欽及當時服務學校資料。</li>
+   <li><a href="https://www.kinmen.gov.tw/News_Content2.aspx?n=98E3CA7358C89100&s=51D57273EC4C4F92&sms=BF7D6D478B935644" target="_blank" rel="noopener noreferrer">金門縣政府：〈《小簾立大功》湖小科展作品獲陸全國賽一等獎金牌〉</a>——報導作品研究主題、獎項與指導教師。</li>
+   <li><a href="https://sces.hcc.edu.tw/p/450-1076-5029%2Cc1.php?Lang=zh-tw" target="_blank" rel="noopener noreferrer">新竹縣山崎國小官方網站</a>——學校公開資訊與校務相關連結。</li>
+  </ol>
+  <p class="notice">網站正式公開前，建議由本人確認姓名、現職、可公開的個人照片、聯絡方式及所有競賽紀錄。為保護隱私，本頁未自行加入私人電話、私人電子郵件或未經確認的學經歷。</p>
+ </div>
+</section>
+</main>
+<footer><div class="wrap"><p>李永欽老師｜個人專業介紹</p><p>新竹縣山崎國民小學・教育行政與科學教育</p></div></footer>
+<a class="backtop" href="#top" aria-label="回到頁首">回到頁首 ↑</a>
+</body>
+</html>
